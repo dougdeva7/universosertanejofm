@@ -1,0 +1,3 @@
+# AGENTS — Universo Sertanejo FM
+
+Leia integralmente `docs/project.md` antes de alterar o código. O projeto é uma adaptação visual de `dborgesdev/sertanejo-studio`, preservando estrutura, funcionalidades, player e app. Trabalhe somente em `feat/universo-sertanejo-v1`; preserve os arquivos fornecidos em `public/` e o workflow de sync ajustado para `dougdeva7/universosertanejofm`. Não invente contatos, estatísticas ou fatos da emissora. Cada seção principal permanece em componente TSX próprio. Priorize identidade laranja, imagens luminosas individualizadas, acessibilidade, motion intencional, SEO, build de produção e teste de player. Não refatore arquitetura nem adicione dependências por conveniência. Não faça commit, push, PR, merge ou deploy sem autorização explícita.

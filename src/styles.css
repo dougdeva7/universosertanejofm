@@ -1,0 +1,198 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Cinzel", serif;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  /* Paleta da marca */
+  --color-graphite-dark: #171616;
+  --color-graphite-medium: #242121;
+  --color-graphite-light: #292524;
+
+  --color-brand: #fe3300; /* Laranja do logotipo */
+  --color-brand-bright: #ff935e; /* Laranja claro */
+  --color-brand-deep: #b52b08;
+  --color-brand-glow: rgba(254, 51, 0, 0.25);
+
+  --color-cream: #fbf8f3; /* Creme Radiante para Títulos */
+  --color-taupe: #e3d9c6; /* Champagne Suave para Leitura */
+
+  --radius-lg: 1rem;
+}
+
+:root {
+  --background: #171616;
+  --foreground: #fbf8f3;
+  --muted: #292524;
+  --muted-foreground: #e3d9c6;
+  --border: rgba(254, 51, 0, 0.25);
+  --primary: #fe3300;
+  --primary-foreground: #171616;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #171616;
+    color: #fbf8f3;
+    font-family: "Inter", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  * {
+    border-color: var(--border);
+  }
+  ::selection {
+    background: rgba(254, 51, 0, 0.35);
+    color: #ffffff;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #171616;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #b52b08, #ff935e);
+    border-radius: 10px;
+    border: 2px solid #171616;
+  }
+}
+
+@utility text-brand-gradient-dark {
+  background: linear-gradient(135deg, #96300f 0%, #ae2b08 35%, #be310a 70%, #7c240c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0px 1px 2px rgba(26, 19, 12, 0.15));
+}
+
+@utility text-brand-gradient {
+  background: linear-gradient(
+    135deg,
+    #ff863f 0%,
+    #ffc09e 25%,
+    #fe3300 50%,
+    #ffd3bd 75%,
+    #ff7844 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0px 2px 10px rgba(254, 51, 0, 0.3));
+}
+
+@utility bg-brand-gradient {
+  background: linear-gradient(135deg, #ff935e 0%, #ff7138 45%, #ffab83 100%);
+}
+
+@utility bg-radial-brand {
+  background: radial-gradient(circle at center, rgba(254, 51, 0, 0.25), transparent 65%);
+}
+
+@utility glass-card {
+  background: rgba(41, 37, 36, 0.75);
+  backdrop-filter: blur(20px) saturate(140%);
+  border: 1px solid rgba(254, 51, 0, 0.25);
+}
+
+@utility font-display {
+  font-family: "Cinzel", serif;
+  letter-spacing: 0.02em;
+}
+
+@keyframes ken-burns {
+  0% {
+    transform: scale(1) translate(0, 0);
+    opacity: 0;
+  }
+  10%,
+  40% {
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1) translate(-2%, -1%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes equalizer {
+  0%,
+  100% {
+    transform: scaleY(0.3);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes float-y {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@keyframes shimmer-sweep {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(52, 211, 153, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(52, 211, 153, 0);
+  }
+}
+
+@layer base {
+  html {
+    scroll-padding-top: 6rem;
+  }
+  :focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
