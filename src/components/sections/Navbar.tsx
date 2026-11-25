@@ -17,7 +17,7 @@ export function Navbar() {
 
   return (
     <header
-      className="fixed inset-x-0 top-0 z-50 bg-brand text-graphite-dark shadow-lg"
+      className="fixed inset-x-0 top-0 z-50 border-b border-[rgba(229,169,60,0.15)] bg-[#140f0a]/80 text-cream backdrop-blur-md"
       onKeyDown={(event) => {
         if (event.key === "Escape" && open) {
           setOpen(false);
@@ -30,7 +30,7 @@ export function Navbar() {
           <ul className="flex gap-5 xl:gap-7">
             {NAV_ITEMS.map(({ label, href }) => (
               <li key={href}>
-                <a className="text-sm font-bold hover:underline" href={href}>
+                <a className="text-sm font-bold hover:text-brand-bright hover:underline" href={href}>
                   {label}
                 </a>
               </li>

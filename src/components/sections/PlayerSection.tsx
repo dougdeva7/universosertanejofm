@@ -47,8 +47,8 @@ export function PlayerSection() {
             Rádio ao vivo
           </span>
 
-          <h2 className="font-display text-3xl md:text-5xl lg:text-6xl font-bold tracking-wide text-graphite-medium">
-            <span className="text-brand-gradient-dark font-bold">{SITE_DATA.brandName}</span>
+          <h2 className="font-display text-balance text-[clamp(1.875rem,4.2vw,3.5rem)] font-extrabold leading-[1.12] tracking-[-0.035em] text-graphite-medium">
+            <span className="text-brand-gradient-dark">{SITE_DATA.brandName}</span>
           </h2>
 
           <p className="mt-3 text-[#4a3e31] text-sm md:text-base font-semibold">

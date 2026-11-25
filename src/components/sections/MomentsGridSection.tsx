@@ -94,7 +94,7 @@ export function MomentsGridSection() {
               )}
 
               <div className="absolute inset-x-0 bottom-0 p-6 z-10">
-                <h3 className="font-display text-2xl md:text-3xl tracking-wide text-cream group-hover:text-brand-bright transition-colors">
+                <h3 className="font-display text-2xl font-bold leading-[1.12] tracking-[-0.025em] lg:text-[1.75rem] text-cream group-hover:text-brand-bright transition-colors">
                   {it.title}
                 </h3>
                 <p className="mt-2 text-xs md:text-sm text-[#d9d2c4] opacity-80 group-hover:opacity-100 transition-opacity duration-300 max-w-sm">

@@ -20,8 +20,8 @@ export function AppEcosystemSection() {
           <p className="inline-flex items-center gap-2 rounded-full border border-[rgba(26,19,12,0.25)] bg-[rgba(26,19,12,0.06)] px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-[#96300f] mb-4 backdrop-blur-md">
             Aplicativo Oficial
           </p>
-          <h2 className="mt-3 font-display text-4xl md:text-5xl lg:text-6xl leading-tight text-graphite-medium font-bold">
-            <span className="text-brand-gradient-dark">{SITE_DATA.brandName}</span>{" "}
+          <h2 className="mt-3 font-display text-balance text-[clamp(2rem,4vw,3.5rem)] font-extrabold leading-[1.12] tracking-[-0.04em] text-graphite-medium">
+            <span className="text-brand-gradient-dark lg:inline-block">{SITE_DATA.brandName}</span>{" "}
             <span>no Seu Dispositivo</span>
           </h2>
           <p className="mt-6 text-[#4a3e31] font-medium leading-relaxed">

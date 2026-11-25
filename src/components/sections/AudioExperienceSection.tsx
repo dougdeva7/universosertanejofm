@@ -60,7 +60,7 @@ export function AudioExperienceSection() {
                 />
               </div>
               <div className="p-4 md:p-6 absolute inset-x-0 bottom-0 bg-[#171414]/95">
-                <h3 className="font-display text-lg sm:text-xl md:text-lg lg:text-xl tracking-wide text-cream group-hover:text-brand-bright transition-colors">
+                <h3 className="font-display text-lg font-bold leading-tight tracking-[-0.02em] sm:text-xl xl:text-2xl text-cream group-hover:text-brand-bright transition-colors">
                   {c.title}
                 </h3>
                 <p className="mt-3 text-sm text-taupe leading-relaxed">{c.body}</p>

@@ -100,7 +100,7 @@ export function SectionHeader({
       )}
 
       <h2
-        className={`font-display text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-wide text-balance ${
+        className={`font-display text-balance text-[clamp(1.875rem,4vw,3.25rem)] font-bold leading-[1.14] tracking-[-0.035em] ${
           isLight ? "text-graphite-medium" : "text-cream"
         }`}
       >

@@ -90,12 +90,12 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.15, duration: 0.9 }}
-          className="font-display text-[clamp(2rem,9.5vw,3rem)] sm:text-6xl md:text-7xl lg:text-8xl text-balance leading-[0.95] max-w-5xl drop-shadow-[0_4px_20px_rgba(0,0,0,0.9)]"
+          className="font-display max-w-5xl text-balance text-[clamp(2.375rem,7vw,5.75rem)] font-extrabold leading-[1.06] tracking-[-0.045em] drop-shadow-[0_4px_20px_rgba(0,0,0,0.9)]"
         >
           <span className="text-brand-gradient block drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
             {SITE_DATA.brandName}
           </span>
-          <span className="block mt-3 text-3xl sm:text-4xl md:text-5xl text-cream drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
+          <span className="mt-4 block text-[clamp(1.5rem,3.4vw,2.75rem)] font-semibold leading-[1.15] tracking-[-0.025em] text-cream drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
             {SITE_DATA.slogan}
           </span>
         </motion.h1>

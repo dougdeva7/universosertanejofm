@@ -14,7 +14,7 @@ export function InstagramSection({ url, handle }: { url: string; handle: string 
             Conexão Social
           </p>
 
-          <h2 className="mt-3 font-display text-4xl md:text-5xl">
+          <h2 className="mt-3 font-display text-3xl font-bold leading-tight tracking-[-0.035em] md:text-5xl">
             Siga a <span className="text-brand-gradient-dark">{SITE_DATA.brandName}</span>
           </h2>
 

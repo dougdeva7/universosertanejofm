@@ -14,7 +14,7 @@ export function FooterSection() {
               className="w-56 rounded-lg object-contain drop-shadow-[0_0_15px_rgba(254,51,0,0.3)] transition-transform duration-300 hover:scale-105"
             />
           </div>
-          <p className="mt-3 text-xs uppercase tracking-[0.3em] text-brand">{SITE_DATA.slogan}</p>
+          {/* <p className="mt-3 text-xs uppercase tracking-[0.3em] text-brand">{SITE_DATA.slogan}</p> */}
           <p className="mt-4 text-sm text-taupe max-w-sm leading-relaxed">
             A rádio sertaneja que traz a combinação perfeita entre os grandes clássicos da roça e os
             maiores lançamentos da atualidade.
@@ -22,7 +22,9 @@ export function FooterSection() {
         </div>
 
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
-          <h4 className="font-display text-lg tracking-widest text-cream mb-4">NAVEGAÇÃO</h4>
+          <h4 className="font-display mb-4 text-base font-bold leading-snug tracking-[0.09em] text-cream">
+            NAVEGAÇÃO
+          </h4>
           <ul className="space-y-3 text-sm text-taupe">
             <li>
               <a href="#top" className="hover:text-brand-bright transition-colors">
@@ -49,9 +51,9 @@ export function FooterSection() {
       </div>
       <div
         className="w-full my-8 pt-6 border-t border-current/10 text-center"
-        aria-label="Diretórios de rádio"
+        aria-label="Parceiros"
       >
-        <h3 className="mb-5 text-base font-semibold">Diretórios de rádio</h3>
+        <h3 className="mb-5 text-base font-bold leading-snug tracking-[-0.01em]">Parceiros</h3>
         <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6">
           <a
             key="myTuner Radio"

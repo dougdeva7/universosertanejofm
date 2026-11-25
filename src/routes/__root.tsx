@@ -18,8 +18,8 @@ function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
-        <h1 className="text-7xl font-bold text-foreground">404</h1>
-        <h2 className="mt-4 text-xl font-semibold text-foreground">Página não encontrada</h2>
+        <h1 className="text-6xl font-extrabold leading-none tracking-tight text-foreground sm:text-7xl">404</h1>
+        <h2 className="mt-4 text-xl font-bold leading-tight tracking-tight text-foreground">Página não encontrada</h2>
         <p className="mt-2 text-sm text-muted-foreground">
           O endereço pode ter mudado ou a página pode ter sido removida.
         </p>
@@ -88,9 +88,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: SITE_DATA.brandName },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "pt_BR" },
-
-      /* Twitter Default */
-      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -103,7 +100,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
       },
     ],
   }),

@@ -14,7 +14,9 @@ import { SITE_DATA } from "@/config/siteData";
 
 const { brandName, slogan, description, url, logoPath } = SITE_DATA;
 const title = `${brandName} | ${slogan}`;
-const image = new URL(logoPath, url).href;
+const logo = new URL(logoPath, url).href;
+const socialImage = new URL("/og-image.webp", url).href;
+const socialImageAlt = `${brandName} · ${slogan}, em fundo laranja com ondas sonoras`;
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -25,12 +27,17 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:url", content: url },
-      { property: "og:image", content: image },
-      { property: "og:image:alt", content: `Logotipo ${brandName}` },
+      { property: "og:image", content: socialImage },
+      { property: "og:image:secure_url", content: socialImage },
+      { property: "og:image:type", content: "image/webp" },
+      { property: "og:image:width", content: "1733" },
+      { property: "og:image:height", content: "907" },
+      { property: "og:image:alt", content: socialImageAlt },
+      { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: title },
       { name: "twitter:description", content: description },
-      { name: "twitter:image", content: image },
-      { name: "twitter:image:alt", content: `Logotipo ${brandName}` },
+      { name: "twitter:image", content: socialImage },
+      { name: "twitter:image:alt", content: socialImageAlt },
     ],
     links: [{ rel: "canonical", href: url }],
     scripts: [
@@ -45,8 +52,8 @@ export const Route = createFileRoute("/")({
               name: brandName,
               slogan,
               url,
-              image,
-              logo: image,
+              image: logo,
+              logo,
               description,
               genre: ["Sertanejo", "Modão", "Sertanejo Universitário"],
             },

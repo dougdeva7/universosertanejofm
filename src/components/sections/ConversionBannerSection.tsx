@@ -32,7 +32,7 @@ export function ConversionBannerSection() {
           >
             <div className="absolute inset-0 bg-radial-brand opacity-50 pointer-events-none" />
             <div className="relative max-w-2xl mx-auto">
-              <h2 className="font-display text-4xl md:text-6xl leading-tight">
+              <h2 className="font-display text-balance text-[clamp(2rem,5vw,3.75rem)] font-extrabold leading-[1.1] tracking-[-0.04em]">
                 <span className="text-brand-gradient">Aumente o Volume</span>
                 <br />
                 <span className="text-cream">Ligada em você!</span>

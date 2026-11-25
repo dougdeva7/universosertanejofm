@@ -40,7 +40,7 @@ export function LiveRadioSection() {
           <div className="relative aspect-4/5 rounded-3xl overflow-hidden border border-[rgba(181,43,8,0.3)] shadow-[0_20px_50px_rgba(26,19,12,0.12)]">
             <img
               src={studio}
-              alt="Microfone e mesa de som em estúdio de rádio ilustrativo"
+              alt="Vista ampla de um estúdio de rádio ilustrativo, com mesa de transmissão, microfones articulados e monitores"
               loading="lazy"
               className="w-full h-full object-cover brightness-105 contrast-105"
             />
@@ -60,7 +60,7 @@ export function LiveRadioSection() {
             Rádio online
           </p>
 
-          <h2 className="mt-3 font-display text-4xl md:text-5xl lg:text-6xl leading-tight">
+          <h2 className="mt-3 font-display text-[clamp(2.125rem,4.1vw,3.5rem)] font-extrabold leading-[1.1] tracking-[-0.04em]">
             <span className="text-brand-gradient-dark">Companhia de Verdade,</span>
             <br />
             <span className="text-graphite-medium">Ao Vivo</span>
@@ -89,7 +89,7 @@ export function LiveRadioSection() {
                   <Icon size={22} />
                 </div>
                 <div className="min-w-0">
-                  <h3 className="font-semibold text-graphite-medium text-base">{title}</h3>
+                  <h3 className="text-base font-semibold leading-snug tracking-[-0.01em] text-graphite-medium">{title}</h3>
                   <p className="text-sm text-[#5c4f40] mt-1 leading-snug">{body}</p>
                 </div>
               </motion.div>

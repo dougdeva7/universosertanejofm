@@ -4,7 +4,7 @@
 - **Confirmado:** repositório de origem `dborgesdev/sertanejo-studio`; destino `dborgesdev/universosertanejofm`; domínio `https://universosertanejofm.com/`.
 - **Confirmado:** a branch `feat/universo-sertanejo-v1` foi criada a partir da `main` do destino; a `main` contém `public/logo-universo-sertanejo.webp` e `public/app-img.webp`.
 - **Confirmado:** preservar layout, hierarquia de seções, qualidade visual, motion, player, links de app e stack existente. Não refazer desnecessariamente a arquitetura.
-- **Pendente:** cópia local integral de arquivos binários do projeto de origem para a branch de V1 e composição dos novos assets.
+- **Concluído na V1:** importação dos arquivos do projeto de origem e composição dos assets da identidade Universo Sertanejo FM.
 - **Pendente:** checar os dados de Instagram, WhatsApp, e-mail e localização do site original antes de publicá-los como dados da nova rádio; não assumir que os contatos da rádio antiga pertencem à nova.
 
 ## Ordem obrigatória do trabalho
@@ -16,7 +16,7 @@
 ## Identidade e conteúdo
 - Nome oficial: **Universo Sertanejo FM**; slogan oficial: **Ligada em você** (em contexto publicitário, `Ligada em você!` quando apropriado).
 - Cor principal: **laranja vivo do fundo do logo fornecido**, aferir a cor a partir do arquivo original, sem inventar um laranja genérico. Aplicar nos tokens, CTAs, badges, bordas, highlights, gradientes e transições; não deixar dourados residuais da marca antiga.
-- Header fixo com fundo laranja da marca e logotipo **grande**, legível e centralizado em desktop/mobile. Dimensionar a barra para acomodá-lo sem deformação ou recorte. Atenção: o arquivo `logo-universo-sertanejo.webp` possui composição horizontal; nunca usar quadrado com conteúdo minúsculo como logo de navegação. Se a transparência for necessária, derivar arquivo sem fundo mantendo exatamente o traço e textos originais; usar variante adaptada sem redesenhar a marca. Garantir contraste de links, badge e menu sobre laranja.
+- Header fixo com o fundo original do Sertanejo Studio (`#140f0a` a 80%, com desfoque). A cor e a opacidade são constantes durante a rolagem. Preservar o logotipo atual e suas dimensões, assim como o contraste e a navegação.
 - Em TODO conteúdo público substituir a marca anterior por Universo Sertanejo FM, incluindo alt, aria, Copyright, mensagens, títulos, seções, menu, metatags, OG, JSON-LD, canonical, favicon e configuração central. Eliminar `A mais gostosa de ouvir` e variações em todos os textos e chamadas. Evitar duplicação como `Rádio Universo Sertanejo FM` quando desnecessária.
 - Manter a proposta de rádio sertaneja online e as seções do site original; adaptar a copy que depende explicitamente de marca ou slogan sem inventar alegações de audiência, disponibilidade 100%, estatísticas ou outras provas inexistentes.
 - Domínio/canonical: `https://universosertanejofm.com/`. Corrigir `<html lang="pt-BR">` no shell.
@@ -24,10 +24,11 @@
 - App: `https://player.svrdedicado.org/player-app-multi-plataforma/8046` **sem alterações**.
 - Conteúdo da tela do telefone: `public/app-img.webp`. Manter a composição do mockup original, aplicando essa imagem na tela do telefone com perspectiva adequada e evitando bordas distorcidas ou texto ilegível; se `app-img.webp` já for mockup completo, verificar antes e não aplicar duas molduras.
 - Logo fornecido: `public/logo-universo-sertanejo.webp`. Usá-lo sem redesenhar a identidade.
+- No rodapé, manter os logotipos e links sob o título **Parceiros**.
 - Footer obrigatório: texto visível exato `Desenvolvido por Douglas Borges - Smart Local`, link `https://smartlocal.com.br`, `target="_blank"`, `rel="noopener noreferrer"`.
 
 ## Direção visual — preservar alto padrão original
-Manter o grid, o ritmo, a alternância entre seções claras e escuras, a tipografia editorial e os componentes do site original. Reinterpretar o antigo dourado/café em torno do laranja intenso, preto grafite, creme e neutros quentes e claros. Escuro deve funcionar como **contraste editorial**, não dominar todas as fotografias. Laranja do logo é a cor de identidade, não um filtro laranja colocado em todas as imagens.
+Manter o grid, o ritmo, a alternância entre seções claras e escuras, a hierarquia tipográfica e os componentes do site original. Aplicar Segoe UI com fallbacks `system-ui, sans-serif` aos títulos e manter Inter no texto corrido. Ajustar tamanho, peso, altura de linha e espaçamento conforme a função de cada título. Reinterpretar o antigo dourado/café em torno do laranja intenso, preto grafite, creme e neutros quentes e claros. Escuro deve funcionar como **contraste editorial**, não dominar todas as fotografias. Laranja do logo é a cor de identidade, não um filtro laranja colocado em todas as imagens.
 
 ### Mapa de imagens (cada arquivo final gerado individualmente)
 - `hero-1..6.webp` + `hero-1m..6m.webp`: seis cenários com composição própria e versões desktop/mobile ajustadas ao conteúdo. Manter o princípio do slideshow com fotografias diferentes, cinematográficas porém luminosas, com área segura para textos e continuidade visual. Explorar varanda sertaneja banhada de sol, paisagem de campo sob céu claro, estrada brasileira, música sertaneja em palco de luz quente, objetos rurais de qualidade editorial e outros ambientes distintos. Não duplicar a mesma imagem com crops inapropriados.
@@ -35,7 +36,7 @@ Manter o grid, o ritmo, a alternância entre seções claras e escuras, a tipogr
 - `style-universitario.webp`: festa ou show sertanejo universitário com pessoas e luz de palco equilibrada, **não** ambiente preto/escuro.
 - `style-estrada.webp`: ponto de vista de viagem com estrada e paisagem ampla, céu luminoso.
 - `style-modao.webp`: violão/viola e atmosfera acolhedora de varanda sob luz natural.
-- `hero-4m.webp` usado também em LiveRadioSection: **não** reutilizar arbitrariamente um hero para fingir um estúdio real. Fazer fotografia editorial conceitual apropriada para o slot de transmissão (microfone, mesa ou tecnologia de áudio), sem alegar que é instalação física real da emissora. Considerar asset dedicado.
+- `live-studio.webp` (4:5) em LiveRadioSection: imagem editorial inédita, em plano amplo, de estúdio ilustrativo com mesa de transmissão, braços de microfone, monitores, tratamento acústico, luz natural e acabamentos em madeira.
 - `moment-bbq.webp`: churrasco com luz natural, alimento protagonista.
 - `moment-work.webp`: ambiente de trabalho claro e contemporâneo com detalhe de música.
 - `moment-rest.webp`: varanda/rede/café sob luz suave.
@@ -51,10 +52,10 @@ Manter Navbar, Hero (slideshow), Player, AudioExperience, LiveRadio, MomentsGrid
 O original já é React + TypeScript + Tailwind e TanStack Start, com Vite/Nitro configurados via `@lovable.dev/vite-tanstack-config`. Preservar inicialmente o stack e lockfile `pnpm-lock.yaml`; **não** migrar para Vite SPA durante essa adaptação sem justificativa e plano explícito. Auditar o build de produção e o target real antes de alterar deploy. Confirmar Vercel/Cloudflare target, output do build, runtime, endpoints `api/now-playing.js` e eventual integração de metadata; não presumir que tudo funciona apenas porque o dev server carrega.
 
 ## SEO e QA
-Atualizar title, description, OG/Twitter, RadioStation/WebSite JSON-LD e URLs absolutas. Usar apenas dados confirmados. Checar favicon, robots e sitemap existentes ou necessários. Garantir acessibilidade, alt, foco, menu mobile, player, todos os links, visual em 375/768/1024/1440px, console, possíveis vazamentos da marca antiga e screenshots visuais. Rodar `pnpm install` conforme lockfile, lint, typecheck quando disponível e build de produção, registrando resultados reais. Não publicar antes de validada a qualidade visual no desktop/mobile e o funcionamento do player/app.
+Atualizar title, description, OG/Twitter, RadioStation/WebSite JSON-LD e URLs absolutas. Usar `https://universosertanejofm.com/og-image.webp` (WebP, 1733 × 907 px) em Open Graph e Twitter, com `summary_large_image` e alt descritivo. Usar apenas dados confirmados. Checar favicon, robots e sitemap existentes ou necessários. Garantir acessibilidade, alt, foco, menu mobile, player, todos os links, visual em 375/768/1024/1440px, console, possíveis vazamentos da marca antiga e screenshots visuais. Rodar `pnpm install` conforme lockfile, lint, typecheck quando disponível e build de produção, registrando resultados reais. Não publicar antes de validada a qualidade visual no desktop/mobile e o funcionamento do player/app.
 
 ## Pendências
 - Confirmar Instagram, e-mail, WhatsApp e cidade da nova rádio; dados do original não são automaticamente válidos.
 - Confirmar acesso e existência de `dougdeva7/universosertanejofm`, e a permissão de escrita do token no workflow.
-- Conferir se `public/app-img.webp` é a tela do celular ou o mockup final.
+- `public/app-img.webp` é a captura de tela aplicada ao mockup do celular.
 - Não substituir imagens reais ou declarações factuais por montagens apresentadas como evidência.
