@@ -55,7 +55,7 @@ export const Route = createFileRoute("/")({
               image: logo,
               logo,
               description,
-              genre: ["Sertanejo", "Modão", "Sertanejo Universitário"],
+              genre: ["Sertanejo Universitário", "Sertanejo"],
             },
             {
               "@type": "WebSite",

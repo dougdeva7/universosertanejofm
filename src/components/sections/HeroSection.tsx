@@ -106,7 +106,8 @@ export function HeroSection() {
           transition={{ delay: 0.35, duration: 0.9 }}
           className="mt-8 max-w-2xl text-base md:text-lg text-[#f0eadd] leading-relaxed drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)] font-normal"
         >
-          Do modão de viola aos sucessos universitários. Ouça o sertanejo que acompanha o seu dia.
+          Online do Brasil para o mundo. Os grandes sucessos do sertanejo universitário, onde você
+          estiver.
         </motion.p>
 
         <motion.div

@@ -13,7 +13,7 @@ const CARDS = [
   {
     icon: Mic,
     title: "Seleção Sertaneja",
-    body: "Do sertanejo raiz aos sucessos universitários.",
+    body: "Os grandes hits e as novidades do sertanejo universitário.",
   },
   {
     icon: Smartphone,
@@ -67,8 +67,8 @@ export function LiveRadioSection() {
           </h2>
 
           <p className="mt-6 text-[#4a3e31] leading-relaxed text-base font-normal">
-            Modão de viola, clássicos e lançamentos fazem parte da programação da Universo Sertanejo
-            FM. Dê o play e acompanhe a rádio onde estiver.
+            Grandes sucessos e lançamentos do sertanejo universitário fazem parte da programação da
+            Universo Sertanejo FM. Dê o play e acompanhe a rádio onde estiver.
           </p>
 
           {/* Lista de Cards Claros */}

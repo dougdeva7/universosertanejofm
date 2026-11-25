@@ -16,8 +16,7 @@ export function FooterSection() {
           </div>
           {/* <p className="mt-3 text-xs uppercase tracking-[0.3em] text-brand">{SITE_DATA.slogan}</p> */}
           <p className="mt-4 text-sm text-taupe max-w-sm leading-relaxed">
-            A rádio sertaneja que traz a combinação perfeita entre os grandes clássicos da roça e os
-            maiores lançamentos da atualidade.
+            Sua rádio online para ouvir os grandes sucessos e lançamentos do sertanejo universitário.
           </p>
         </div>
 

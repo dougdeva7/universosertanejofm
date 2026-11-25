@@ -1,16 +1,17 @@
 import { motion } from "framer-motion";
 import { SectionHeader, SectionWrapper } from "../ui/SectionWrapper";
 import { GlassCard } from "../ui/GlassCard";
-import raiz from "../../assets/style-raiz.webp";
+import sucessos from "../../assets/style-sucessos.webp";
 import univ from "../../assets/style-universitario.webp";
 import estrada from "../../assets/style-estrada.webp";
-import modao from "../../assets/style-modao.webp";
+import fimDeTarde from "../../assets/style-fim-de-tarde.webp";
 
 const CARDS = [
   {
-    img: raiz,
-    title: "O Melhor do Sertanejo Raiz",
-    body: "Os clássicos inesquecíveis que marcaram gerações. A verdadeira essência da viola caipira e dos grandes modões.",
+    img: sucessos,
+    alt: "Dupla sertaneja contemporânea cantando em um palco iluminado",
+    title: "Os Grandes Sucessos do Sertanejo",
+    body: "Os hits que marcaram gerações e continuam fazendo parte da sua playlist.",
   },
   {
     img: univ,
@@ -23,9 +24,10 @@ const CARDS = [
     body: "A companhia ideal para quem vive em movimento, trazendo energia, ritmo marcante e presença constante.",
   },
   {
-    img: modao,
-    title: "Modão de Fim de Tarde",
-    body: "O descanso merecido ao som das maiores composições e duetos marcantes da música sertaneja.",
+    img: fimDeTarde,
+    alt: "Grupo de jovens adultos conversando ao ar livre no fim de tarde",
+    title: "Sertanejo no Fim de Tarde",
+    body: "Os sucessos que combinam com aquele momento de relaxar e aproveitar o dia.",
   },
 ];
 
@@ -54,7 +56,7 @@ export function AudioExperienceSection() {
               <div className="relative aspect-square rounded-2xl overflow-hidden">
                 <img
                   src={c.img}
-                  alt={c.title}
+                  alt={c.alt ?? c.title}
                   loading="lazy"
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />

@@ -18,6 +18,7 @@ const ITEMS = [
 
   {
     img: work,
+    alt: "Fones de ouvido e notebook em uma mesa de trabalho iluminada",
     title: "No Trabalho",
     body: "Foco, produtividade e o fundo musical perfeito para o seu expediente.",
     featured: false,
@@ -36,8 +37,9 @@ const ITEMS = [
   },
   {
     img: field,
+    alt: "Jovem em estilo country contemporâneo junto a uma caminhonete no campo",
     title: "No Campo",
-    body: "A conexão autêntica com as nossas raízes e com a vida na terra.",
+    body: "A energia do sertanejo universitário também acompanha seus momentos no campo.",
     featured: false,
   },
   {
@@ -81,7 +83,7 @@ export function MomentsGridSection() {
             >
               <img
                 src={it.img}
-                alt={it.title}
+                alt={it.alt ?? it.title}
                 loading="lazy"
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />

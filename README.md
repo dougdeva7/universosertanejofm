@@ -1,6 +1,6 @@
 # Universo Sertanejo FM
 
-Rádio sertaneja online. **Ligada em você**.
+Rádio online com os grandes sucessos e lançamentos do sertanejo universitário. **Ligada em você**.
 
 ## Desenvolvimento local
 
