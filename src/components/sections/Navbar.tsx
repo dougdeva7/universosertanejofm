@@ -25,7 +25,7 @@ export function Navbar() {
         }
       }}
     >
-      <div className="relative mx-auto grid h-24 max-w-7xl grid-cols-[1fr_auto_1fr] items-center px-4 sm:px-8">
+      <div className="relative mx-auto grid h-30 max-w-7xl grid-cols-[1fr_auto_1fr] items-center px-4 sm:px-8">
         <nav aria-label="Navegação principal" className="hidden lg:block">
           <ul className="flex gap-5 xl:gap-7">
             {NAV_ITEMS.map(({ label, href }) => (
@@ -43,7 +43,7 @@ export function Navbar() {
             alt={SITE_DATA.brandName}
             width={800}
             height={328}
-            className="h-auto w-48 [clip-path:inset(2px)] sm:w-52"
+            className="h-auto w-52 [clip-path:inset(2px)] sm:w-56"
           />
         </a>
         <a
